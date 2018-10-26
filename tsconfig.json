@@ -16,6 +16,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@zeitzuhelfen/authentication": [
+        "libs/authentication/src/index.ts"
+      ]
     }
   },
   "exclude": [

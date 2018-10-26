@@ -7,7 +7,7 @@
       "root": "apps/zeitzuhelfen/",
       "sourceRoot": "apps/zeitzuhelfen/src",
       "projectType": "application",
-      "prefix": "apps/zeitzuhelfen",
+      "prefix": "zzh",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -122,6 +122,34 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        }
+      }
+    },
+    "authentication": {
+      "root": "libs/authentication",
+      "sourceRoot": "libs/authentication/src",
+      "projectType": "library",
+      "prefix": "zzh",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/authentication/tsconfig.lib.json",
+              "libs/authentication/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/authentication/jest.config.js",
+            "tsConfig": "libs/authentication/tsconfig.spec.json",
+            "setupFile": "libs/authentication/src/test-setup.ts"
           }
         }
       }
