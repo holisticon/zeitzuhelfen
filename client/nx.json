@@ -7,5 +7,12 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "zeitzuhelfen": {
+      "tags": []
+    },
+    "zeitzuhelfen-e2e": {
+      "tags": []
+    }
+  }
 }
