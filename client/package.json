@@ -35,13 +35,14 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
-    "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
-    "@nrwl/nx": "6.3.1",
     "@ngrx/effects": "6.0.1",
     "@ngrx/router-store": "6.0.1",
-    "@ngrx/store": "6.0.1"
+    "@ngrx/store": "6.0.1",
+    "@nrwl/nx": "6.3.1",
+    "auth0-js": "9.8.1",
+    "core-js": "^2.5.4",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/cli": "6.1.2",
