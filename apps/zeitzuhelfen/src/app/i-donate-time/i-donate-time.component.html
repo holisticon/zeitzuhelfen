@@ -1,4 +1,4 @@
-<h2>Ich schenke Zeit</h2>
+<h1 class="mb-3">Ich schenke Zeit</h1>
 
 <form>
     <div class="form-group">
@@ -7,22 +7,28 @@
     </div>
     <div class="form-group">
         <label for="">Von / bis</label>
-        <input type="time" class="form-control" />
-        <input type="time" class="form-control" />
+        <div class="row">
+            <div class="col">
+                <input type="time" class="form-control" />
+            </div>
+            <div class="col">
+                <input type="time" class="form-control" />
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label for="">Hinweis</label>
-        <textarea></textarea>
+        <textarea class="form-control"></textarea>
     </div>
-    <!-- <div class="form-group form-check">
+    <div class="form-group">
         <label>Möglich</label>
 
-        <div class="form-check" *ngFor="let requirement of requirements; let i = index">
-            <input type="checkbox" class="form-check-input" id="requirement-{{ i }}">
-            <label class="form-check-label" for="requirement-{{ i }}">{{ requirement }}</label>
+        <div class="form-check" *ngFor="let ability of abilities; let i = index">
+            <input type="checkbox" class="form-check-input" id="ability-{{ i }}">
+            <label class="form-check-label" for="ability-{{ i }}">{{ ability }}</label>
         </div>
-    </div> -->
+    </div>
 
-    <button type="submit" class="btn btn-primary">Veröffentlichen</button>
-    <button type="submit" class="btn btn-secondary">Abbrechen</button>
+    <button type="submit" class="btn btn-primary mr-2" routerLink="/">Veröffentlichen</button>
+    <button type="submit" class="btn btn-secondary" routerLink="/">Abbrechen</button>
 </form>

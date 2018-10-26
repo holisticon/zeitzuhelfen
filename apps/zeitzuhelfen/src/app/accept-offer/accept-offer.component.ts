@@ -1,12 +1,12 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'zzh-accept-match',
-  templateUrl: './accept-match.component.html',
-  styleUrls: ['./accept-match.component.css'],
+  selector: 'zzh-accept-offer',
+  templateUrl: './accept-offer.component.html',
+  styleUrls: ['./accept-offer.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AcceptMatchComponent implements OnInit {
+export class AcceptOfferComponent implements OnInit {
 
   constructor() { }
 

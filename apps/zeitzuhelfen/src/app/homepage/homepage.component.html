@@ -1,18 +1,22 @@
-<h2>Hilfe schenken</h2>
+<h1 class="mb-3">Hilfe schenken</h1>
 
-<button class="btn btn-primary">Zeit schenken</button>
-<button class="btn btn-primary">Ich suche Hilfe</button>
+<div>
+    <button class="btn btn-primary mr-2" routerLink="i-donate-time">Zeit schenken</button>
+    <button class="btn btn-primary" routerLink="i-need-help">Ich suche Hilfe</button>
+</div>
 
-<h3>Meine Matches</h3>
-
+<h2 class="mt-5 mb-3">Meine Matches</h2>
 <ul>
     <li>
-        <label>
-            <input type="checkbox">
-            Einkaufen fahren
-        </label>
-        <button>Match zustimmen</button>
-        <button>Bearbeiten</button>
-        <button>Löschen</button>
+        <zzh-match
+            title="Einkaufen fahren"
+            type="request"
+        ></zzh-match>
+    </li>
+    <li>
+        <zzh-match
+            title="Zeit für Gartenarbeit"
+            type="offer"
+        ></zzh-match>
     </li>
 </ul>

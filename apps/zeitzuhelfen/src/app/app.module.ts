@@ -5,11 +5,13 @@ import { RouterModule } from '@angular/router';
 import { NxModule } from '@nrwl/nx';
 import { AuthenticationCallbackComponent, AuthenticationModule, AUTHENTICATION_CONFIG } from '@zeitzuhelfen/authentication';
 import { environment } from '../environments/environment';
-import { AcceptMatchComponent } from './accept-match/accept-match.component';
+import { AcceptOfferComponent } from './accept-offer/accept-offer.component';
+import { AcceptRequestComponent } from './accept-request/accept-request.component';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { IDonateTimeComponent } from './i-donate-time/i-donate-time.component';
 import { INeedHelpComponent } from './i-need-help/i-need-help.component';
+import { MatchComponent } from './match/match.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +19,9 @@ import { INeedHelpComponent } from './i-need-help/i-need-help.component';
         HomepageComponent,
         INeedHelpComponent,
         IDonateTimeComponent,
-        AcceptMatchComponent
+        AcceptOfferComponent,
+        AcceptRequestComponent,
+        MatchComponent
     ],
     imports: [
         BrowserModule,
@@ -35,6 +39,14 @@ import { INeedHelpComponent } from './i-need-help/i-need-help.component';
                 {
                     path: 'i-donate-time',
                     component: IDonateTimeComponent
+                },
+                {
+                    path: 'accept-offer',
+                    component: AcceptOfferComponent
+                },
+                {
+                    path: 'accept-request',
+                    component: AcceptRequestComponent
                 },
                 {
                     path: 'authentication/callback',

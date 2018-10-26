@@ -1,6 +1,12 @@
-<h1>zeit zu helfen</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">Zeit zu helfen</a>
 
-<button (click)="login()" *ngIf="!isAuthenticated">Login</button>
-<button (click)="logout()" *ngIf="isAuthenticated">Logout</button>
+    <div>
+        <button class="btn" (click)="login()" *ngIf="!isAuthenticated">Login</button>
+        <button class="btn" (click)="logout()" *ngIf="isAuthenticated">Logout</button>
+    </div>
+</nav>
 
-<router-outlet></router-outlet>
+<div class="container mt-5">
+    <router-outlet *ngIf="isAuthenticated"></router-outlet>
+</div>

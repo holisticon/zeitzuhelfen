@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { abilities } from '../abilities';
 
 @Component({
   selector: 'zzh-i-need-help',
@@ -8,12 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class INeedHelpComponent {
 
-    requirements: [
-        'Kontakt mit Tieren',
-        'Auto vorhanden',
-        'Schwere Hebearbeit',
-        'Leichte Hebearbeit',
-        'Computerkenntnisse',
-        'Fremdsprache'
-    ];
+    requirements = abilities;
+
 }

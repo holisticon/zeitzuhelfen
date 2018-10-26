@@ -1,4 +1,4 @@
-<h2>Ich suche Hilfe</h2>
+<h1 class="mb-3">Ich suche Hilfe</h1>
 
 <form>
     <div class="form-group">
@@ -11,15 +11,21 @@
     </div>
     <div class="form-group">
         <label for="">Von / bis</label>
-        <input type="time" class="form-control" />
-        <input type="time" class="form-control" />
+        <div class="row">
+            <div class="col">
+                <input type="time" class="form-control" />
+            </div>
+            <div class="col">
+                <input type="time" class="form-control" />
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label for="">Hinweis</label>
-        <textarea></textarea>
+        <textarea class="form-control"></textarea>
     </div>
-    <div class="form-group form-check">
-        <label>Anforderungen</label>
+    <div class="form-group">
+        <label>Möglich</label>
 
         <div class="form-check" *ngFor="let requirement of requirements; let i = index">
             <input type="checkbox" class="form-check-input" id="requirement-{{ i }}">
@@ -27,6 +33,6 @@
         </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Veröffentlichen</button>
-    <button type="submit" class="btn btn-secondary">Abbrechen</button>
+    <button type="submit" class="btn btn-primary mr-2" routerLink="/">Veröffentlichen</button>
+    <button type="submit" class="btn btn-secondary" routerLink="/">Abbrechen</button>
 </form>

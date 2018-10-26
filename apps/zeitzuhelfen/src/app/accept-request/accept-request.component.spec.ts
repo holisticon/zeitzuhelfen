@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AcceptMatchComponent } from './accept-match.component';
+import { AcceptRequestComponent } from './accept-request.component';
 
-describe('AcceptMatchComponent', () => {
-  let component: AcceptMatchComponent;
-  let fixture: ComponentFixture<AcceptMatchComponent>;
+describe('AcceptRequestComponent', () => {
+  let component: AcceptRequestComponent;
+  let fixture: ComponentFixture<AcceptRequestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AcceptMatchComponent ]
+      declarations: [ AcceptRequestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AcceptMatchComponent);
+    fixture = TestBed.createComponent(AcceptRequestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
