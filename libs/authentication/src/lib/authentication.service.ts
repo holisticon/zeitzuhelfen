@@ -24,6 +24,7 @@ export class AuthenticationService {
             domain: 'zeitzuhelfen.eu.auth0.com',
             responseType: 'token id_token',
             redirectUri: config.redirectUri,
+            audience: 'https://zeitzuhelfen-api.herokuapp.com',
             scope: 'openid'
         })
     }
