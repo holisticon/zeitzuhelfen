@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { MatchService } from '../match.service';
 
 @Component({
   selector: 'zzh-homepage',
@@ -6,4 +8,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomepageComponent {
+
+    matches: Observable<any>;
+
+    constructor(
+        private matchService: MatchService
+    ) {
+        this.matches = matchService.getAll();
+    }
+
 }
