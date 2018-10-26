@@ -26,4 +26,9 @@ export class INeedHelpComponent {
         private router: Router
     ) {}
 
+    onPublish() {
+        this.requestService.publish(this.request)
+            .subscribe(() => this.router.navigate([]));
+    }
+
 }
