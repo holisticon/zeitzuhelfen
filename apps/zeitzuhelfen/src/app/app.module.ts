@@ -5,18 +5,16 @@ import { RouterModule } from '@angular/router';
 import { NxModule } from '@nrwl/nx';
 import { AuthenticationCallbackComponent, AuthenticationModule, AUTHENTICATION_CONFIG } from '@zeitzuhelfen/authentication';
 import { environment } from '../environments/environment';
-import { AppComponent } from './app.component';
-import { DonateHelpComponent } from './donate-help/donate-help.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { INeedHelpComponent } from './i-need-help/i-need-help.component';
-import { IDonateTimeComponent } from './i-donate-time/i-donate-time.component';
 import { AcceptMatchComponent } from './accept-match/accept-match.component';
+import { AppComponent } from './app.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { IDonateTimeComponent } from './i-donate-time/i-donate-time.component';
+import { INeedHelpComponent } from './i-need-help/i-need-help.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomepageComponent,
-        DonateHelpComponent,
         INeedHelpComponent,
         IDonateTimeComponent,
         AcceptMatchComponent
@@ -29,6 +27,14 @@ import { AcceptMatchComponent } from './accept-match/accept-match.component';
                 {
                     path: '',
                     component: HomepageComponent
+                },
+                {
+                    path: 'i-need-help',
+                    component: INeedHelpComponent
+                },
+                {
+                    path: 'i-donate-time',
+                    component: IDonateTimeComponent
                 },
                 {
                     path: 'authentication/callback',
