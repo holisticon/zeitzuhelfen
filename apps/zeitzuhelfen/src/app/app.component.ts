@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { AuthenticationService } from '@zeitzuhelfen/authentication';
 
 @Component({
     selector: 'zeitzuhelfen-root',
-    templateUrl: './app.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
     constructor(
