@@ -54,7 +54,7 @@
     "@angular/language-service": "^6.1.0",
     "@ngrx/store-devtools": "6.0.1",
     "@nrwl/builders": "6.3.1",
-    "@nrwl/schematics": "6.3.1",
+    "@nrwl/schematics": "6.4.0",
     "@types/auth0": "2.9.4",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
